@@ -53,7 +53,7 @@ async def query_route(
     return client.send()
 
 
-main_mcp.mount("sf", sf_mcp)
+main_mcp.mount(sf_mcp, prefix="sf")
 
 
 async def main():
